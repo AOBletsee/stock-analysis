@@ -53,7 +53,7 @@ That said, after creating the VBA Macros, we observed that even better performan
 
 
 
-##### Original Code Explained
+#### Original Code Explained
 
 In the **original code**, we iterated through each of the the rows using a *for loop* to find the total daily volume for each stock, the starting and ending price. Within this *loop* we started the total volume to *zero* when we established its variable; and  started another *for* *loop* still within it, that iterated using another variable to find the total volume, starting and ending prices using *if statements*.  As a final argument of the first loop we outputted the total daily volume and the return - using starting and ending price - for every row, as seen here:
 
@@ -103,7 +103,7 @@ In the **original code**, we iterated through each of the the rows using a *for 
 
 
 
-##### Refactored Code Explained
+#### Refactored Code Explained
 
 In the **refactored code**, we started by creating a new Ticker Index variable. We then created three output arrays, for Volumes, Starting Prices and Ending Prices. We then created a *for loop* that initialized all ticker volumes to *zero* (0). After that we used a separate *for loop* to loop through the rows iterating the ticker volumes for each ticker, and within it also we used  *if statement*s to identify the starting and ending prices. We then started a new *for loop* that looped through the arrays we had created initially to output the total daily volumes for each stock, and the return, based on outputs of Starting and Ending Price arrays, as seen here:
 
@@ -161,7 +161,7 @@ In the **refactored code**, we started by creating a new Ticker Index variable. 
 
 
 
-##### Comparison of Execution Times
+#### Comparison of Execution Times
 
 By verifying the execution times of the original and refactored codes we could observe that the refactored code **performed better** and **ran faster** in the analysis of both 2017 and 2018 dataset.
 
